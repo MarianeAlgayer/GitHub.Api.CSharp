@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api", "TrackFetch.Api\TrackFetch.Api.csproj", "{AA1C776E-BA89-4549-8E00-EE2056BDF1AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api", "src\TrackFetch.Api\TrackFetch.Api.csproj", "{AA1C776E-BA89-4549-8E00-EE2056BDF1AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8099627D-5958-4846-ABD6-EB6241811843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79683822-838D-483C-BA1D-AF7871FF5A0E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA1C776E-BA89-4549-8E00-EE2056BDF1AD} = {8099627D-5958-4846-ABD6-EB6241811843}
 	EndGlobalSection
 EndGlobal
