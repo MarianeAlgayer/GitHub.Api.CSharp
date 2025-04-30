@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api", "src\Track
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8099627D-5958-4846-ABD6-EB6241811843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api.UnitTests", "src\TrackFetch.Api\TrackFetch.Api.UnitTests\TrackFetch.Api.UnitTests.csproj", "{B28B15BB-3F37-4408-A50A-90E82A7B8E58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api.UnitTests", "tests\TrackFetch.Api.UnitTests\TrackFetch.Api.UnitTests.csproj", "{B28B15BB-3F37-4408-A50A-90E82A7B8E58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83BEB761-EE3B-43F0-B881-35150DA3EBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AA1C776E-BA89-4549-8E00-EE2056BDF1AD} = {8099627D-5958-4846-ABD6-EB6241811843}
-		{B28B15BB-3F37-4408-A50A-90E82A7B8E58} = {8099627D-5958-4846-ABD6-EB6241811843}
+		{B28B15BB-3F37-4408-A50A-90E82A7B8E58} = {83BEB761-EE3B-43F0-B881-35150DA3EBFE}
 	EndGlobalSection
 EndGlobal
