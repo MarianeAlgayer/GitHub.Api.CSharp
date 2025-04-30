@@ -20,4 +20,5 @@
     <None Remove="Microsoft.AspNetCore.Mvc.Versioning" />
     <None Remove="MediatR" />
   </ItemGroup>
+
 </Project>
