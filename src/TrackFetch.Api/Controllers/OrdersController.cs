@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using TrackFetch.Api.Application.UseCases.Orders;
 
 namespace TrackFetch.Api.Controllers;
 
@@ -21,7 +22,12 @@ public class OrdersController : ControllerBase
         [Required][FromQuery] string orderId,
         CancellationToken cancellationToken)
     {
-        var output = await _mediator(orderId, cancellationToken);
+        var input = new OrdersInput()
+        {
+            Id = orderId
+        };
+
+        var output = await _mediator.Send(input, cancellationToken).ConfigureAwait(false);
 
         return Ok();
     }

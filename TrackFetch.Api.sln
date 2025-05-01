@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api.UnitTests", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83BEB761-EE3B-43F0-B881-35150DA3EBFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackFetch.Api.Application", "src\TrackFetch.Api.Application\TrackFetch.Api.Application.csproj", "{03612CD4-09EA-4888-8F4C-D2549046C9B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{B28B15BB-3F37-4408-A50A-90E82A7B8E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B28B15BB-3F37-4408-A50A-90E82A7B8E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B28B15BB-3F37-4408-A50A-90E82A7B8E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03612CD4-09EA-4888-8F4C-D2549046C9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03612CD4-09EA-4888-8F4C-D2549046C9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03612CD4-09EA-4888-8F4C-D2549046C9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03612CD4-09EA-4888-8F4C-D2549046C9B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +41,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AA1C776E-BA89-4549-8E00-EE2056BDF1AD} = {8099627D-5958-4846-ABD6-EB6241811843}
 		{B28B15BB-3F37-4408-A50A-90E82A7B8E58} = {83BEB761-EE3B-43F0-B881-35150DA3EBFE}
+		{03612CD4-09EA-4888-8F4C-D2549046C9B3} = {8099627D-5958-4846-ABD6-EB6241811843}
 	EndGlobalSection
 EndGlobal
