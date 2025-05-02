@@ -4,7 +4,7 @@ namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Interfa
 {
 	public interface IGitHubRepository
 	{
-		Task<IEnumerable<GetUsersResponse>> GetUsersAsync(CancellationToken cancellationToken);
+		Task<IEnumerable<GetUsersResponse>> GetUsersAsync(int since, CancellationToken cancellationToken);
 	}
 }
 

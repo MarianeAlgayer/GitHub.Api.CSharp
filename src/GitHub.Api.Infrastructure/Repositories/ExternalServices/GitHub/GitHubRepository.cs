@@ -1,10 +1,10 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Interfaces;
 using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Responses;
 using GitHub.Api.Infrastructure.Repositories.Options;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub
 {
@@ -28,9 +28,9 @@ namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub
             _option = option;
         }
 
-        public async Task<IEnumerable<GetUsersResponse>> GetUsersAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<GetUsersResponse>> GetUsersAsync(int since, CancellationToken cancellationToken)
         {
-            var endpoint = _option.Value.GetUsersPath;
+            var endpoint = string.Format(_option.Value.GetUsersPath, since);
 
             try
             {
@@ -40,7 +40,7 @@ namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    _logger.LogError("");
+                    _logger.LogError("GitHubRepository - GetUsersAsync: error to list GitHub users.");
                     return Enumerable.Empty<GetUsersResponse>();
                 }
 
@@ -48,7 +48,7 @@ namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub
             }
             catch(Exception e)
             {
-                _logger.LogError("");
+                _logger.LogError(e, "GitHubRepository - GetUsersAsync: error to list GitHub users.");
                 return Enumerable.Empty<GetUsersResponse>();
             }
         }

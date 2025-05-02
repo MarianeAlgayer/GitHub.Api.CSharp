@@ -19,12 +19,12 @@ public class UsersController : ControllerBase
 
     [HttpGet]
     public async Task<IActionResult> GetUsersAsync(
-        [Required][FromQuery] int id,
+        [Required][FromQuery] int since,
         CancellationToken cancellationToken)
     {
         var input = new UsersInput()
         {
-            Id = id
+            Since = since
         };
 
         var output = await _mediator.Send(input, cancellationToken).ConfigureAwait(false);
