@@ -1,4 +1,4 @@
-﻿using TrackFetch.Api.DependencyInjection;
+﻿using GitHub.Api.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

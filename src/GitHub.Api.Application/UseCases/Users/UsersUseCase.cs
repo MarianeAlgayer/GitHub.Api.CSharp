@@ -1,4 +1,5 @@
 ﻿using GitHub.Api.Application.UseCases.Users.Interfaces;
+using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Interfaces;
 
 namespace GitHub.Api.Application.UseCases.Users
 {
