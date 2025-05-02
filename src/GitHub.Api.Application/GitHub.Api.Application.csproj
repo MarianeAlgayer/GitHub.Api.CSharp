@@ -8,16 +8,10 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="UseCases\" />
-    <None Remove="UseCases\Orders\" />
-    <None Remove="UseCases\Orders\Interfaces\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UseCases\" />
-    <Folder Include="UseCases\Orders\" />
-    <Folder Include="UseCases\Orders\Interfaces\" />
+    <ProjectReference Include="..\GitHub.Api.Infrastructure\GitHub.Api.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

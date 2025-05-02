@@ -18,16 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DependencyInjection\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\TrackFetch.Api.Application\TrackFetch.Api.Application.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    <ProjectReference Include="..\GitHub.Api.Application\GitHub.Api.Application.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\GitHub.Api.Infrastructure\GitHub.Api.Infrastructure.csproj">
     </ProjectReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" />
-  </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace TrackFetch.Api.DependencyInjection
+﻿namespace GitHub.Api.DependencyInjection
 {
 	public static class MediatorExtension
 	{
