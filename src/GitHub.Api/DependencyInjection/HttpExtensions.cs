@@ -1,5 +1,4 @@
-﻿
-using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub;
+﻿using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub;
 using GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Interfaces;
 using GitHub.Api.Infrastructure.Repositories.Options;
 

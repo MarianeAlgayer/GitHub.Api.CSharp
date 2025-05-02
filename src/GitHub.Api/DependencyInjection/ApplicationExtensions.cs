@@ -4,21 +4,21 @@ using GitHub.Api.Infrastructure.Repositories.Options;
 
 namespace GitHub.Api.DependencyInjection
 {
-	public static class ApplicationExtensions
-	{
-		public static IServiceCollection AddUseCases(this IServiceCollection services)
-		{
-			services.AddScoped<IUsersUseCase, UsersUseCase>();
+    public static class ApplicationExtensions
+    {
+        public static IServiceCollection AddUseCases(this IServiceCollection services)
+        {
+            services.AddScoped<IUsersUseCase, UsersUseCase>();
 
-			return services;
-		}
+            return services;
+        }
 
-		public static IServiceCollection AddOptionsConfig(this IServiceCollection services, IConfiguration configuration)
-		{
-			services.Configure<GitHubOption>(options =>
-				configuration
-					.GetSection(GitHubOption.SectionName)
-					.Bind(options));
+        public static IServiceCollection AddOptionsConfig(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<GitHubOption>(options =>
+                configuration
+                    .GetSection(GitHubOption.SectionName)
+                    .Bind(options));
 
             return services;
         }

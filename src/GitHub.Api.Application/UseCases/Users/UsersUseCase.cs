@@ -35,4 +35,3 @@ namespace GitHub.Api.Application.UseCases.Users
         }
     }
 }
-
