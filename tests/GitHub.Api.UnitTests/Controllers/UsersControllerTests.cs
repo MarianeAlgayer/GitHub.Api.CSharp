@@ -2,7 +2,7 @@
 
 namespace GitHub.Api.UnitTests.Controllers
 {
-	public class OrdersControllerTests
+	public class UserControllerTests
 	{
 	}
 }

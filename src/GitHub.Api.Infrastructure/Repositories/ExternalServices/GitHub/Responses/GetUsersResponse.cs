@@ -2,8 +2,8 @@
 
 namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Responses
 {
-	public class GetUsersResponse
-	{
+    public class GetUsersResponse
+    {
         public string Login { get; set; }
 
         public int Id { get; set; }

@@ -5,9 +5,9 @@ using GitHub.Api.Infrastructure.Repositories.Options;
 
 namespace GitHub.Api.DependencyInjection
 {
-	public static class HttpExtensions
+    public static class HttpExtensions
     {
-		public static IServiceCollection AddHttpClients(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddHttpClients(this IServiceCollection services, IConfiguration configuration)
         {
             var gitHubConfig = configuration.GetSection(GitHubOption.SectionName).Get<GitHubOption>();
 

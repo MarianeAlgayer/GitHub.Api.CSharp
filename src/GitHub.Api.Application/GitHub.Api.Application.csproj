@@ -14,4 +14,5 @@
   <ItemGroup>
     <ProjectReference Include="..\GitHub.Api.Infrastructure\GitHub.Api.Infrastructure.csproj" />
   </ItemGroup>
+
 </Project>

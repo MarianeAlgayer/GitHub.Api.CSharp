@@ -7,4 +7,3 @@ namespace GitHub.Api.Infrastructure.Repositories.ExternalServices.GitHub.Interfa
 		Task<IEnumerable<GetUsersResponse>> GetUsersAsync(int since, CancellationToken cancellationToken);
 	}
 }
-

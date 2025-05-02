@@ -13,8 +13,8 @@ namespace GitHub.Api.DependencyInjection
 			return services;
 		}
 
-        public static IServiceCollection AddOptionsConfig(this IServiceCollection services, IConfiguration configuration)
-        {
+		public static IServiceCollection AddOptionsConfig(this IServiceCollection services, IConfiguration configuration)
+		{
 			services.Configure<GitHubOption>(options =>
 				configuration
 					.GetSection(GitHubOption.SectionName)
