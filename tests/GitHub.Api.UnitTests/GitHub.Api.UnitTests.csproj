@@ -29,17 +29,5 @@
     <ProjectReference Include="..\..\src\GitHub.Api.Infrastructure\GitHub.Api.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\GitHub.Api.Application\GitHub.Api.Application.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <None Remove="NSubstitute" />
-    <None Remove="NBuilder" />
-    <None Remove="FluentAssertions" />
-    <None Remove="Application\" />
-    <None Remove="Application\UseCases\" />
-    <None Remove="Infrastructure\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Application\UseCases\" />
-    <Folder Include="Infrastructure\" />
-  </ItemGroup>
+
 </Project>
