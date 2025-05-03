@@ -19,6 +19,27 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="NSubstitute" Version="5.3.0" />
+    <PackageReference Include="NBuilder" Version="6.1.0" />
+    <PackageReference Include="FluentAssertions" Version="8.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GitHub.Api\GitHub.Api.csproj" />
+    <ProjectReference Include="..\..\src\GitHub.Api.Infrastructure\GitHub.Api.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\GitHub.Api.Application\GitHub.Api.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NSubstitute" />
+    <None Remove="NBuilder" />
+    <None Remove="FluentAssertions" />
+    <None Remove="Application\" />
+    <None Remove="Application\UseCases\" />
+    <None Remove="Infrastructure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Application\UseCases\" />
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
 </Project>
