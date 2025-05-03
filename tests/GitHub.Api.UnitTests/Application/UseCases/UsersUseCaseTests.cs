@@ -12,9 +12,9 @@ using Xunit;
 namespace GitHub.Api.UnitTests.Application.UseCases
 {
     public class UsersUseCaseTests
-	{
-		private readonly IGitHubRepository _gitHubRepository;
-		private readonly IOptions<GitHubOption> _option;
+    {
+        private readonly IGitHubRepository _gitHubRepository;
+        private readonly IOptions<GitHubOption> _option;
         private readonly IUsersUseCase _usersUseCase;
 
         public UsersUseCaseTests()
